@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UFC Fan Page</title>
+  <link rel="stylesheet" href="/styles/index.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">UFC Fan Page</h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-64n1VHhvqwMvkVgFQuShOubXz8GvnrxrA&s" alt="UFC Logo" class="ufc-logo" style="height:48px; margin: 0 24px;"><nav>
+        <ul class="nav-links">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="peleadores.html">PELEADORES</a></li>
+          <li><a href="noticias.html">NOTICIAS</a></li>
+          <li><a href="eventos.html">EVENTOS</a></li>
+          <li><a href="registro.html">REGÍSTRATE</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="banner-images">
+        <img src="https://ufc.com/images/styles/background_image_xl_2x/s3/2025-05/051925-michael-morales-GettyImages-2215636153%20%281%29.jpeg?h=29704f7e&itok=SIiRcKZ8" alt="Banner UFC 1">
+        <img src="https://ufc.com/images/styles/background_image_xl_2x/s3/image/2025-05/280625-hero-ilia-topuria-charles-bronxs-oliveira.jpg?h=d1cb525d&itok=ljJwQFSm" alt="Banner UFC 2">
+        <img src="https://ufc.com/images/styles/background_image_xl_2x/s3/2025-04/053125-ufc-fight-night-blanchfield-vs-barber-EVENT-ART.jpg?h=d1cb525d&itok=neHTnN3z" alt="Banner UFC 3">
+      </div>
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <h2 class="banner-title">Bienvenido al octágono</h2>
+        <p class="banner-description">
+          Toda la acción, eventos y peleadores de la UFC en un solo lugar.<br>
+          ¡Siente la emoción de las MMA como nunca antes!
+        </p>
+        <div class="banner-buttons">
+          <a href="eventos.html" class="btn-primary">Ver Próximos Eventos</a>
+          <a href="#peleadores" class="btn-secondary">Peleadores Destacados</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-products" id="peleadores">
+      <h2 class="section-title">Peleadores Destacados</h2>
+      <div class="products-grid">
+        <!-- Peleador 1 -->
+        <div class="product-card">
+          <img src="https://media.revistagq.com/photos/5ecd0ab8453e617baa183158/16:9/w_1920,c_limit/GettyImages-1200439664.jpg" alt="Conor McGregor" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-name">Conor McGregor</h3>
+            <p class="product-description">El irlandés más famoso del octágono. Carisma, KO y espectáculo asegurado.</p>
+            <span class="product-price">Peso Ligero</span>
+            <div class="product-button">
+               <a href="https://www.instagram.com/thenotoriousmma/" target="_blank" class="add-to-cart ufc-button">Ver Perfil</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Peleador 2 -->
+        <div class="product-card">
+          <img src="https://images.squarespace-cdn.com/content/v1/602dd49e1d1bee18debb2fe2/1618741783983-POR0J2Z8ZQ6XULRWV6W2/amanda+nunes.jpg?format=2500w" alt="Amanda Nunes" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-name">Amanda Nunes</h3>
+            <p class="product-description">La leona de las MMA. Una leyenda viva del peso gallo y pluma.</p>
+            <span class="product-price">Peso Gallo Femenino</span>
+            <div class="product-button">
+              <a href="https://www.instagram.com/amanda_leoa/" target="_blank" class="add-to-cart ufc-button">Ver Perfil</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Peleador 3 -->
+        <div class="product-card">
+          <img src="https://www.telecomasia.net/upload/sprint.editor/dc8/dc8f2239e972d2b36ac15875752ffd9a.jpg" alt="Adesanya" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-name">Israel Adesanya</h3>
+            <p class="product-description">El estilo y precisión lo definen. Campeón del peso mediano.</p>
+            <span class="product-price">Peso Medio</span>
+            <div class="product-button">
+               <a href="https://www.instagram.com/stylebender/" target="_blank" class="add-to-cart ufc-button">Ver Perfil</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Peleador 4 -->
+        <div class="product-card">
+          <img src="https://bloodyelbow.com/wp-content/uploads/1/2025/04/GettyImages-2185190977-1024x683.jpg" alt="Jon Jones" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-name">Jon Jones</h3>
+            <p class="product-description">Uno de los GOATs. Dominante en semipesado y ahora en peso pesado.</p>
+            <span class="product-price">Peso Pesado</span>
+            <div class="product-button">
+              <a href="https://www.instagram.com/jonnybones/" target="_blank" class="add-to-cart ufc-button">Ver Perfil</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <h2 class="info-title">LA UFC COMO NUNCA ANTES</h2>
+      <div class="info-container">
+        <div class="info-item">
+          <h3>EVENTOS EN VIVO</h3>
+          <p>Sigue todos los eventos en tiempo real, conoce el calendario completo y los resultados.</p>
+        </div>
+        <div class="info-item">
+          <h3>PELEADORES</h3>
+          <p>Explora el perfil de los peleadores, sus estadísticas, videos y logros destacados.</p>
+        </div>
+        <div class="info-item">
+          <h3>RANKINGS</h3>
+          <p>Mira cómo se mueve cada división. Actualizaciones semanales del top 10 de cada categoría.</p>
+        </div>
+        <div class="info-item">
+          <h3>TIENDA UFC</h3>
+          <p>Próximamente: compra camisetas, guantes, y más productos oficiales UFC.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Sobre UFC Fan Page</h4>
+        <p>Proyecto académico inspirado en el universo de las MMA. No oficial.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <ul>
+          <li>Email: contacto@ufcfanpage.com</li>
+          <li>Horario: Lun-Dom, 10:00 AM - 10:00 PM</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="peleadores.html">Peleadores</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook--v1.png" alt="Facebook"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 UFC Fan Page. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="/Js/index.js"></script>
+</body>
+</html>

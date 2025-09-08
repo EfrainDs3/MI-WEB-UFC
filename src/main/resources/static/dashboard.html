@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Admin UFC</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,700|Montserrat:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <div class="admin-panel">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span class="ufc-logo">UFC</span>
+                <span class="panel-title">Panel Admin</span>
+            </div>
+            <nav class="sidebar-nav" style="margin-top: 18px;">
+                <ul>
+                    <li class="nav-item active" data-section="noticias"><i class="fa-solid fa-newspaper"></i> Noticias</li>
+                    <li class="nav-item" data-section="peleadores"><i class="fa-solid fa-user"></i> Peleadores</li>
+                    <li class="nav-item" data-section="eventos"><i class="fa-solid fa-calendar"></i> Eventos</li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <button class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</button>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="main-header">
+                <h1 id="main-title">Gestión de Noticias</h1>
+                <button class="add-btn" id="add-btn"><i class="fa-solid fa-plus"></i> Agregar</button>
+            </header>
+            <section class="main-section" id="section-noticias">
+                <div class="table-filters">
+                    <input type="text" id="buscar-noticia" placeholder="Buscar noticias...">
+                </div>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Título</th>
+                            <th>Contenido</th>
+                            <th>Enlace</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="noticias-tbody"></tbody>
+                </table>
+            </section>
+            <section class="main-section" id="section-peleadores" style="display:none;">
+                <div class="table-filters">
+                    <input type="text" id="buscar-peleador" placeholder="Buscar peleadores...">
+                </div>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Peso</th>
+                            <th>Enlace</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="peleadores-tbody"></tbody>
+                </table>
+            </section>
+            <section class="main-section" id="section-eventos" style="display:none;">
+                <div class="table-filters">
+                    <input type="text" id="buscar-evento" placeholder="Buscar eventos...">
+                </div>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Fecha</th>
+                            <th>Lugar</th>
+                            <th>Enlace</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="eventos-tbody"></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <!-- Modal para agregar/editar -->
+    <div class="modal" id="modal-form" style="display:none;">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <form id="modal-entity-form"></form>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html> 
